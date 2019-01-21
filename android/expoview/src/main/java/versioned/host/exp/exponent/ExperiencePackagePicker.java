@@ -1,5 +1,7 @@
 package versioned.host.exp.exponent;
 
+import expo.modules.blurview.BlurViewPackage;
+
 import org.json.JSONObject;
 
 import java.util.Arrays;
@@ -58,7 +60,8 @@ public class ExperiencePackagePicker {
       new TaskManagerPackage(),
       new BackgroundFetchPackage(),
       new MailComposerPackage(),
-      new AVPackage()
+      new AVPackage(),
+      new BlurViewPackage()
   );
 
   /**

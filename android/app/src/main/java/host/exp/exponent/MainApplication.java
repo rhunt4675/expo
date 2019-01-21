@@ -1,6 +1,7 @@
 package host.exp.exponent;
 
 
+import expo.modules.blurview.BlurViewPackage;
 import com.facebook.react.ReactPackage;
 
 import java.util.Arrays;
@@ -79,7 +80,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
         new AppAuthPackage(),
         new TaskManagerPackage(),
         new BackgroundFetchPackage(),
-        new MailComposerPackage()
+        new MailComposerPackage(),
+        new BlurViewPackage()
     );
   }
 
