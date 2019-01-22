@@ -15,6 +15,7 @@ import expo.modules.barcodescanner.BarCodeScannerPackage;
 import expo.modules.camera.CameraPackage;
 import expo.modules.constants.ConstantsPackage;
 import expo.modules.contacts.ContactsPackage;
+import expo.modules.documentpicker.DocumentPickerPackage;
 import expo.modules.facedetector.FaceDetectorPackage;
 import expo.modules.filesystem.FileSystemPackage;
 import expo.modules.font.FontLoaderPackage;
@@ -35,32 +36,33 @@ import expo.modules.taskManager.TaskManagerPackage;
 
 public class ExperiencePackagePicker {
   private static final List<Package> EXPO_MODULES_PACKAGES = Arrays.<Package>asList(
+      new AdMobPackage(),
+      new AppAuthPackage(),
+      new AVPackage(),
+      new BackgroundFetchPackage(),
+      new BarCodeScannerPackage(),
       new CameraPackage(),
-      new SensorsPackage(),
-      new FileSystemPackage(),
-      new FaceDetectorPackage(),
       new ConstantsPackage(),
+      new ContactsPackage(),
+      new DocumentPickerPackage(),
+      new FaceDetectorPackage(),
+      new FileSystemPackage(),
+      new FontLoaderPackage(),
       new GLPackage(),
       new GoogleSignInPackage(),
-      new PermissionsPackage(),
-      new SMSPackage(),
-      new PrintPackage(),
-      new MediaLibraryPackage(),
-      new SegmentPackage(),
-      new FontLoaderPackage(),
-      new LocationPackage(),
-      new ContactsPackage(),
-      new BarCodeScannerPackage(),
-      new AdMobPackage(),
-      new StripePackage(),
       new LocalAuthenticationPackage(),
       new LocalizationPackage(),
-      new AppAuthPackage(),
-      new TaskManagerPackage(),
-      new BackgroundFetchPackage(),
+      new LocationPackage(),
       new MailComposerPackage(),
-      new AVPackage(),
-      new SQLitePackage()
+      new MediaLibraryPackage(),
+      new PermissionsPackage(),
+      new PrintPackage(),
+      new SegmentPackage(),
+      new SensorsPackage(),
+      new SMSPackage(),
+      new SQLitePackage(),
+      new StripePackage(),
+      new TaskManagerPackage()
   );
 
   /**

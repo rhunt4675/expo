@@ -17,6 +17,7 @@ import expo.modules.barcodescanner.BarCodeScannerPackage;
 import expo.modules.camera.CameraPackage;
 import expo.modules.constants.ConstantsPackage;
 import expo.modules.contacts.ContactsPackage;
+import expo.modules.documentpicker.DocumentPickerPackage;
 import expo.modules.facedetector.FaceDetectorPackage;
 import expo.modules.filesystem.FileSystemPackage;
 import expo.modules.font.FontLoaderPackage;
@@ -58,32 +59,32 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
 
   public List<Package> getExpoPackages() {
     return Arrays.<Package>asList(
+        new AdMobPackage(),
+        new AppAuthPackage(),
+        new AVPackage(),
+        new BackgroundFetchPackage(),
+        new BarCodeScannerPackage(),
         new CameraPackage(),
         new ConstantsPackage(),
-        new SensorsPackage(),
-        new FileSystemPackage(),
+        new ContactsPackage(),
+        new DocumentPickerPackage(),
         new FaceDetectorPackage(),
+        new FileSystemPackage(),
+        new FontLoaderPackage(),
         new GLPackage(),
         new GoogleSignInPackage(),
-        new PermissionsPackage(),
-        new SMSPackage(),
-        new PrintPackage(),
-        new ConstantsPackage(),
-        new MediaLibraryPackage(),
-        new SegmentPackage(),
-        new FontLoaderPackage(),
-        new LocationPackage(),
-        new ContactsPackage(),
-        new BarCodeScannerPackage(),
-        new AdMobPackage(),
         new LocalAuthenticationPackage(),
         new LocalizationPackage(),
-        new AppAuthPackage(),
-        new TaskManagerPackage(),
-        new BackgroundFetchPackage(),
+        new LocationPackage(),
         new MailComposerPackage(),
-        new AVPackage(),
-        new SQLitePackage()
+        new MediaLibraryPackage(),
+        new PermissionsPackage(),
+        new PrintPackage(),
+        new SegmentPackage(),
+        new SensorsPackage(),
+        new SQLitePackage(),
+        new SMSPackage(),
+        new TaskManagerPackage()
     );
   }
 
